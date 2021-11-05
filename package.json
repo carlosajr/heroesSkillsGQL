@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@graphql-tools/merge": "^8.2.1",
+    "@graphql-tools/schema": "^8.3.1",
+    "apollo-server-lambda": "^3.4.1",
+    "aws-sdk": "^2.1021.0",
+    "dynamoose": "^2.8.2",
+    "graphql": "^16.0.1",
+    "uuid": "^8.3.2"
+  },
+  "name": "heroes-skills-gql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "IS_LOCAL=true npx nodemon --exec sls offline start --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "serverless": "^2.64.1",
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-offline": "^8.2.0"
+  }
+}
